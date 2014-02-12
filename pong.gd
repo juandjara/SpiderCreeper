@@ -53,17 +53,17 @@ func _process(delta):
 	
 	#move pads
 	if(left_pos.y > 0 and Input.is_action_pressed("left_move_up")):
-		print("moving left up")
+		#print("moving left up")
 		left_pos.y += -PAD_SPEED* delta
 	if(left_pos.y < screen_size.y and Input.is_action_pressed("left_move_down")):
-		print("moving left down")
+		#print("moving left down")
 		left_pos.y += PAD_SPEED* delta
 	get_node("j1").set_pos(left_pos)
 	
 	if(right_pos.y > 0 and Input.is_action_pressed("right_move_up")):
-		print("moving right up")
+		#print("moving right up")
 		right_pos.y += -PAD_SPEED* delta
 	if(right_pos.y < screen_size.y and Input.is_action_pressed("right_move_down")):
-		print("moving right down")
+		#print("moving right down")
 		right_pos.y += PAD_SPEED* delta
 	get_node("j2").set_pos(right_pos)
