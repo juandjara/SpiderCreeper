@@ -1,2 +1,15 @@
-::res://::1392130832
+::res://::1392179763
+counter.gd::GDScript::1392138755::
 icon.png::ImageTexture::1392130832::
+new_scene.xml::PackedScene::1392133085::
+pong.gd::GDScript::1392179763::
+pong.xml::PackedScene::1392179763::
+scene2.gd::GDScript::1392136199::
+scene2.xml::PackedScene::1392136199::
+scene3.xml::PackedScene::1392138755::
+scene4.xml::PackedScene::1392140536::
+::res://pong-res::1392165997
+ball.png::ImageTexture::1387233244::
+left_pallete.png::ImageTexture::1387233173::
+right_pallete.png::ImageTexture::1387233198::
+separator.png::ImageTexture::1387233336::

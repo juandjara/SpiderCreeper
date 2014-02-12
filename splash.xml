@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="7" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://Splashscreen-res/robisplash_button_pressed.*" type="Texture"></ext_resource>
+	<ext_resource path="res://Splashscreen-res/robisplash_logo.*" type="Texture"></ext_resource>
+	<ext_resource path="res://Splashscreen-res/robisplash_bg.*" type="Texture"></ext_resource>
+	<ext_resource path="res://Splashscreen-res/freesans..*" type="Font"></ext_resource>
+	<ext_resource path="res://button.*" type="Script"></ext_resource>
+	<ext_resource path="res://Splashscreen-res/robisplash_button.*" type="Texture"></ext_resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="62">
+				<string> "background" </string>
+				<string> "TextureFrame" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "focus_neighbour/left" </string>
+				<string> "focus_neighbour/top" </string>
+				<string> "focus_neighbour/right" </string>
+				<string> "focus_neighbour/bottom" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "size_flags/stretch_ratio" </string>
+				<string> "texture" </string>
+				<string> "modulate" </string>
+				<string> "expand" </string>
+				<string> "__meta__" </string>
+				<string> "TextureButton" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "disabled" </string>
+				<string> "toggle_mode" </string>
+				<string> "click_on_press" </string>
+				<string> "textures/normal" </string>
+				<string> "textures/pressed" </string>
+				<string> "textures/hover" </string>
+				<string> "textures/disabled" </string>
+				<string> "textures/focused" </string>
+				<string> "textures/click_mask" </string>
+				<string> "script/script" </string>
+				<string> "Label" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
+				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
+				<string> "autowrap" </string>
+				<string> "uppercase" </string>
+				<string> "percent_visible" </string>
+				<string> "Sprite" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 4 </int>
+			<string> "variants" </string>
+			<array  len="32" shared="false">
+				<bool> True </bool>
+				<real> 1 </real>
+				<real> 40 </real>
+				<node_path> "" </node_path>
+				<int> 2 </int>
+				<resource  resource_type="Texture" path="res://Splashscreen-res/robisplash_bg.*">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<bool> False </bool>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="false">
+								<string> "res://button.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "pixel_snap" </string>
+							<bool> False </bool>
+							<string> "zoom" </string>
+							<real> 0.735092 </real>
+							<string> "ofs" </string>
+							<vector2> -361.655, -3.26032 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "Script" </string>
+				</dictionary>
+				<real> 299 </real>
+				<real> 371 </real>
+				<real> 448 </real>
+				<real> 445 </real>
+				<resource  resource_type="Texture" path="res://Splashscreen-res/robisplash_button.*">  </resource>
+				<resource  resource_type="Texture" path="res://Splashscreen-res/robisplash_button_pressed.*">  </resource>
+				<resource name=""></resource>				<resource  resource_type="Script" path="res://button.*">  </resource>
+				<real> 638 </real>
+				<real> 433 </real>
+				<real> 761 </real>
+				<real> 450 </real>
+				<resource  resource_type="Font" path="res://Splashscreen-res/freesans..*">  </resource>
+				<real> 0 </real>
+				<string> "hjkhjkgklhkhkjl" </string>
+				<int> 0 </int>
+				<real> -1 </real>
+				<vector2> 365.713, 188.965 </vector2>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="Texture" path="res://Splashscreen-res/robisplash_logo.*">  </resource>
+				<vector2> 0, 0 </vector2>
+				<int> 1 </int>
+				<rect2> 0, 0, 0, 0 </rect2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="216"> 				-1, -1, 1, 0, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 2, 8, 3, 9, 3, 10, 3, 11, 3, 12, 0, 13, 0, 14, 4, 15, 4, 16, 1, 17, 5, 18, 6, 19, 7, 20, 8, 0, 0, 0, 21, 21, -1, 27, 2, 0, 3, 1, 4, 1, 5, 0, 22, 9, 23, 10, 6, 11, 7, 12, 8, 3, 9, 3, 10, 3, 11, 3, 12, 7, 13, 0, 14, 4, 15, 4, 16, 1, 24, 7, 25, 7, 26, 7, 27, 13, 28, 14, 29, 15, 30, 15, 31, 15, 32, 15, 33, 16, 0, 0, 0, 34, 34, -1, 30, 2, 0, 3, 1, 4, 1, 5, 0, 22, 17, 23, 18, 6, 19, 7, 20, 8, 3, 9, 3, 10, 3, 11, 3, 12, 0, 13, 0, 14, 4, 16, 1, 35, 21, 36, 22, 37, 1, 38, 1, 39, 1, 40, 22, 41, 7, 42, 7, 43, 23, 44, 24, 45, 24, 46, 7, 47, 7, 48, 25, 0, 0, 0, 49, 49, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 50, 26, 51, 22, 52, 27, 17, 28, 53, 0, 54, 29, 55, 7, 56, 7, 57, 30, 58, 30, 59, 24, 18, 6, 60, 7, 61, 31, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
