@@ -32,17 +32,22 @@ func _integrate_forces(state):
 			elif(jumping):
 				jumptime += 1
 	var down = Vector2(0,-1)
-	for x in range(state.get_contact_count()):
+	#for x in range(state.get_contact_count()):
 		#para que esto funcione
 		#el rigidbody2d tiene que tener la propiedad
 		#"contact monitor" on
 		#y "contacts reported" > 0
 		#en el editor grafico
-		if(state.get_contact_count() > 0):
+	if(state.get_contact_count() > 0):
+		if(not jumping):
 			in_air = false
+			dy = 0
+	else:
+		in_air = true
 		#var collider = state.get_contact_collider_object(x)
 		#if(collider.get_name() == "ground"):
 		#	in_air = false
+	print("jumping: "+str(jumping)+" in_air: "+str(in_air))
 	lv.y+=dy
 	lv += state.get_total_gravity()* step
 	state.set_linear_velocity(lv)
