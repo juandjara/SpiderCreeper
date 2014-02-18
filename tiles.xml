@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="TileSet" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://res/triangulo2.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/cuadrado.png" type="Texture"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0.916115, 0.521439, 62.6142, 0.521439, 62.6142, 64.2098, 0.916115, 64.2098 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			2.59474, 62.8834, 2.59474, 3.17555, 62.966, 62.8834 </vector2_array>
+
+	</resource>
+	<main_resource>
+		<string name="0/name"> "cuadrado" </string>
+		<resource name="0/texture" resource_type="Texture" path="res://res/cuadrado.png">  </resource>
+		<vector2 name="0/offset"> 0, 0 </vector2>
+		<rect2 name="0/region"> 0, 0, 0, 0 </rect2>
+		<array name="0/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://1">  </resource>
+		</array>
+		<string name="1/name"> "rampaDer" </string>
+		<resource name="1/texture" resource_type="Texture" path="res://res/triangulo2.png">  </resource>
+		<vector2 name="1/offset"> 0, 0 </vector2>
+		<rect2 name="1/region"> 0, 0, 0, 0 </rect2>
+		<array name="1/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://2">  </resource>
+		</array>
+		<string name="2/name"> "rampIzq" </string>
+		<resource name="2/texture" resource_type="Texture" path="res://res/triangulo2.png">  </resource>
+		<vector2 name="2/offset"> 0, 0 </vector2>
+		<rect2 name="2/region"> 0, 0, 0, 0 </rect2>
+		<array name="2/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://2">  </resource>
+		</array>
+
+	</main_resource>
+</resource_file>

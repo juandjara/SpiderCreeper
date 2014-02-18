@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://pong-res/left_pallete.*" type="Texture"></ext_resource>
-	<ext_resource path="res://pong-res/right_pallete.*" type="Texture"></ext_resource>
-	<resource type="CircleShape2D" path="local://1">
+	<ext_resource path="res://res/cuadrado.*" type="Texture"></ext_resource>
+	<ext_resource path="res://res/triangulo2.*" type="Texture"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 15 </real>
+		<vector2_array name="points" len="4"> 			0.916115, 0.521439, 62.6142, 0.521439, 62.6142, 64.2098, 0.916115, 64.2098 </vector2_array>
 
 	</resource>
-	<resource type="RectangleShape2D" path="local://2">
+	<resource type="ConvexPolygonShape2D" path="local://2">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 10, 10 </vector2>
+		<vector2_array name="points" len="3"> 			2.59474, 62.8834, 2.59474, 3.17555, 62.966, 62.8834 </vector2_array>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="43">
+			<string_array  len="38">
+				<string> "Root" </string>
 				<string> "Node2D" </string>
 				<string> "visibility/visible" </string>
 				<string> "visibility/opacity" </string>
@@ -25,24 +26,7 @@
 				<string> "transform/rot" </string>
 				<string> "transform/scale" </string>
 				<string> "__meta__" </string>
-				<string> "player" </string>
-				<string> "RigidBody2D" </string>
-				<string> "shape_count" </string>
-				<string> "shapes/0/shape" </string>
-				<string> "shapes/0/transform" </string>
-				<string> "shapes/0/trigger" </string>
-				<string> "mode" </string>
-				<string> "mass" </string>
-				<string> "friction" </string>
-				<string> "bounce" </string>
-				<string> "custom_integrator" </string>
-				<string> "continuous_cd" </string>
-				<string> "contacts_reported" </string>
-				<string> "contact_monitor" </string>
-				<string> "active" </string>
-				<string> "can_sleep" </string>
-				<string> "velocity/linear" </string>
-				<string> "velocity/angular" </string>
+				<string> "cuadrado" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
 				<string> "centered" </string>
@@ -55,19 +39,30 @@
 				<string> "modulate" </string>
 				<string> "region" </string>
 				<string> "region_rect" </string>
-				<string> "CollisionShape2D" </string>
-				<string> "shape" </string>
-				<string> "trigger" </string>
-				<string> "ground" </string>
+				<string> "StaticBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "simulate_motion" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
+				<string> "rampaDer" </string>
+				<string> "rampaDer 2" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 7 </int>
+			<int> 10 </int>
 			<string> "variants" </string>
-			<array  len="30" shared="false">
+			<array  len="23" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
 				<vector2> 0, 0 </vector2>
@@ -81,9 +76,9 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 0.598737 </real>
+							<real> 1.50734 </real>
 							<string> "ofs" </string>
-							<vector2> -170.394, -158.245 </vector2>
+							<vector2> -74.7138, -138.133 </vector2>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -172,33 +167,26 @@
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<vector2> 343.069, 112.067 </vector2>
-				<int> 1 </int>
-				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, -0, 0, 1, 2.45551, 1.22775 </matrix32>
+				<resource  resource_type="Texture" path="res://res/cuadrado.*">  </resource>
 				<bool> False </bool>
-				<int> 2 </int>
-				<real> 0.5 </real>
+				<int> 1 </int>
 				<int> 0 </int>
-				<vector2> 0.465347, -2.22995 </vector2>
-				<resource  resource_type="Texture" path="res://pong-res/left_pallete.*">  </resource>
 				<color> 1, 1, 1, 1 </color>
-				<rect2> 0, 0, 0, 0 </rect2>
-				<vector2> 2.45551, 1.22775 </vector2>
-				<vector2> 323.951, 333.742 </vector2>
-				<real> -13.871605 </real>
-				<vector2> 6.544, 1 </vector2>
+				<rect2> 0, 0, 64, 64 </rect2>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<vector2_array  len="4"> 					0.916115, 0.521439, 0.916115, 64.2098, 62.6142, 64.2098, 62.6142, 0.521439 </vector2_array>
+				<vector2> 64, 0 </vector2>
+				<resource  resource_type="Texture" path="res://res/triangulo2.*">  </resource>
+				<rect2> 64, 0, 64, 64 </rect2>
 				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 2.19062, -0, 0, 1, 0.0958767, 0.657102 </matrix32>
-				<vector2> -0.0712633, -1.36993 </vector2>
-				<real> -89.208229 </real>
-				<vector2> 2.48041, 1.62595 </vector2>
-				<resource  resource_type="Texture" path="res://pong-res/right_pallete.*">  </resource>
-				<vector2> 0.0958767, 0.657102 </vector2>
-				<vector2> 2.19062, 1 </vector2>
+				<vector2_array  len="3"> 					2.59474, 3.17555, 2.59474, 62.8834, 62.966, 62.8834 </vector2_array>
+				<vector2> 192, 0 </vector2>
+				<vector2> -1, 1 </vector2>
+				<rect2> 192, 0, 64, 64 </rect2>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="265"> 				-1, -1, 0, 0, -1, 8, 1, 0, 2, 1, 3, 1, 4, 0, 5, 2, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 9, -1, 23, 1, 0, 2, 1, 3, 1, 4, 0, 5, 6, 6, 3, 7, 4, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 1, 17, 12, 18, 3, 19, 10, 20, 10, 21, 13, 22, 10, 23, 0, 24, 0, 25, 2, 26, 3, 0, 1, 0, 27, 27, -1, 18, 1, 0, 2, 1, 3, 1, 4, 0, 5, 14, 6, 3, 7, 4, 28, 15, 29, 0, 30, 2, 31, 10, 32, 10, 33, 7, 34, 7, 35, 13, 36, 16, 37, 10, 38, 17, 0, 1, 0, 39, 39, -1, 9, 1, 0, 2, 1, 3, 1, 4, 0, 5, 18, 6, 3, 7, 4, 40, 8, 41, 10, 0, 0, 0, 10, 42, -1, 23, 1, 0, 2, 1, 3, 1, 4, 0, 5, 19, 6, 20, 7, 21, 11, 7, 12, 22, 13, 23, 14, 10, 15, 7, 16, 1, 17, 1, 18, 3, 19, 10, 20, 10, 21, 13, 22, 10, 23, 0, 24, 0, 25, 2, 26, 3, 0, 4, 0, 27, 27, -1, 18, 1, 0, 2, 1, 3, 1, 4, 0, 5, 24, 6, 25, 7, 26, 28, 27, 29, 0, 30, 2, 31, 10, 32, 10, 33, 7, 34, 7, 35, 13, 36, 16, 37, 10, 38, 17, 0, 4, 0, 39, 39, -1, 9, 1, 0, 2, 1, 3, 1, 4, 0, 5, 28, 6, 3, 7, 29, 40, 22, 41, 10, 0 </int_array>
+			<int_array  len="344"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 12, 6, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 11, 0, 1, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 12, 26, 13, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 2, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 14, 0, 0, 0, 11, 36, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 15, 7, 3, 8, 4, 12, 16, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 17, 0, 4, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 18, 26, 13, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 5, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 19, 0, 0, 0, 11, 37, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 20, 7, 3, 8, 21, 12, 16, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 22, 0, 7, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 18, 26, 13, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 8, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 19, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>
