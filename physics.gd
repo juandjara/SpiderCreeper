@@ -10,6 +10,7 @@ var MAX_WALK_SPEED = 101
 
 var screen_size
 var sprite_size
+var tile_size
 
 export var walk_speed = 100
 export var jump_speed = -330
@@ -20,6 +21,7 @@ func _ready():
 	set_can_sleep(false)
 	screen_size = get_viewport_rect().size
 	sprite_size = get_child(0).get_texture().get_size()
+	tile_size = get_parent().get_node("TileMap").get_cell_size()
 
 func _integrate_forces(state):
 	var lv = state.get_linear_velocity() #velocidad
@@ -46,7 +48,9 @@ func _integrate_forces(state):
 		#el rigidbody2d tiene que tener la propiedad
 		#y "contacts reported" > 0
 		#en el editor grafico
-	if(state.get_contact_count() > 0):
+	var colisions = state.get_contact_count()
+	if(colisions > 0):
+		print("hey!")
 		if(not jumping):
 			in_air = false
 			if(lv.y < 0):
@@ -54,6 +58,14 @@ func _integrate_forces(state):
 				lv.y = 0
 	else:
 		in_air = true
+	
+	for x in range(state.get_contact_count()):
+		var col_pos = state.get_contact_collider_pos(x)
+		var tile_rel_pos = Vector2(col_pos.x/tile_size, col_pos.y/tile_size)		
+		var tile_id = get_parent().get_node("TileMap").get_cell(tile_rel_pos.x, tile_rel_pos.y)
+		var tile_name = get_parent().get_node("TileMap").get_tileset().tile_get_name(tile_id)
+		if(tile_name == "pinchos"):
+			get_node("/root/global").goto_scene("res://game_over.xml")
 	
 	var dx = 0
 	var left = Input.is_action_pressed("left")

@@ -1,12 +1,12 @@
-::res://::1392838135
+::res://::1392839155
 FondoDEV.png::ImageTexture::1392226250::
 GUI.xml::PackedScene::1392203749::
 button.gd::GDScript::1392209806::
 control.gd::GDScript::1392203749::
 counter.gd::GDScript::1392138755::
 fondo_nubes.png::ImageTexture::1392838135::
-game_over.gd::GDScript::1392838135::
-game_over.xml::PackedScene::1392838135::
+game_over.gd::GDScript::1392839155::
+game_over.xml::PackedScene::1392839155::
 global.gd::GDScript::1392834276::
 icon.png::ImageTexture::1392130832::
 jumptest.xml::PackedScene::1392669921::
