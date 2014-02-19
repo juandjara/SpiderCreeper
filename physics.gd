@@ -61,9 +61,11 @@ func _integrate_forces(state):
 	#mover a la izquierda
 	if(left and not right and lv.x > -MAX_WALK_SPEED):
 		dx = -walk_speed*step*100
+		get_child(0).set_flip_h(true)
 	#mover a la derecha
 	if(right and not left and lv.x < MAX_WALK_SPEED):
 		dx = walk_speed*step*100
+		get_child(0).set_flip_h(false)
 	#colision bordes
 	#if(get_pos().x < sprite_size.x/2 or get_pos().x > screen_size.x - sprite_size.x/2):
 	#	lv.x=0
