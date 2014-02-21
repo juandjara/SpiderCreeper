@@ -49,6 +49,7 @@ func _integrate_forces(state):
 		#y "contacts reported" > 0
 		#en el editor grafico
 	var colisions = state.get_contact_count()
+	print("C: " + str(colisions))
 	if(colisions > 0):
 		if(not jumping):
 			in_air = false
