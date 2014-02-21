@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="12" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://pinchos.*" type="Texture"></ext_resource>
-	<ext_resource path="res://pinchos_sangre.*" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="14" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://meta.*" type="Texture"></ext_resource>
+	<ext_resource path="res://pinchos_sangre.*" type="Texture"></ext_resource>
 	<ext_resource path="res://res/cuadrado.*" type="Texture"></ext_resource>
 	<ext_resource path="res://res/triangulo2.*" type="Texture"></ext_resource>
+	<ext_resource path="res://pinchos.*" type="Texture"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0.916115, 0.521439, 62.6142, 0.521439, 62.6142, 64.2098, 0.916115, 64.2098 </vector2_array>
@@ -17,28 +17,38 @@
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://3">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="3"> 			63.0061, 64.2102, 2.63484, 64.2102, 63.0061, 2.51213 </vector2_array>
+		<vector2_array name="points" len="4"> 			66.8917, 65.4375, 0.431946, 65.4375, 9.413, 41.4881, 56.1145, 41.4881 </vector2_array>
 
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://4">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			66.8917, 65.4375, 0.431946, 65.4375, 9.413, 41.4881, 56.1145, 41.4881 </vector2_array>
+		<vector2_array name="points" len="4"> 			7.25708, 41.8728, 56.1274, 42.6874, 66.716, 64.679, 1.55554, 64.679 </vector2_array>
 
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://5">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			7.25708, 41.8728, 56.1274, 42.6874, 66.716, 64.679, 1.55554, 64.679 </vector2_array>
+		<vector2_array name="points" len="7"> 			14.7042, 56.503, 19.0932, 36.996, 25.433, 19.9274, 33.2358, 1.88339, 41.0386, 21.8781, 46.403, 37.9713, 33.2358, 46.7495 </vector2_array>
 
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://6">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="5"> 			15.68, 59.9167, 4.46347, 23.3411, 34.2117, 1.39572, 63.4722, 22.8534, 54.2063, 58.9414 </vector2_array>
+		<vector2_array name="points" len="3"> 			2.99995, 22.8534, 25.433, 19.9274, 19.0932, 36.996 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://7">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			62.0086, 24.8041, 46.403, 37.9713, 41.0386, 21.8781 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://8">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			51.7675, 59.429, 33.2358, 46.7495, 46.403, 37.9713 </vector2_array>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="40">
+			<string_array  len="49">
 				<string> "Root" </string>
 				<string> "Node2D" </string>
 				<string> "visibility/visible" </string>
@@ -67,6 +77,7 @@
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
+				<string> "simulate_motion" </string>
 				<string> "constant_linear_velocity" </string>
 				<string> "constant_angular_velocity" </string>
 				<string> "friction" </string>
@@ -74,20 +85,28 @@
 				<string> "CollisionPolygon2D" </string>
 				<string> "build_mode" </string>
 				<string> "polygon" </string>
-				<string> "rampaDer" </string>
-				<string> "rampaDer 2" </string>
+				<string> "triangulo" </string>
 				<string> "pinchos" </string>
 				<string> "pinchos_sangre" </string>
 				<string> "meta" </string>
+				<string> "shapes/1/shape" </string>
+				<string> "shapes/1/transform" </string>
+				<string> "shapes/1/trigger" </string>
+				<string> "shapes/2/shape" </string>
+				<string> "shapes/2/transform" </string>
+				<string> "shapes/2/trigger" </string>
+				<string> "shapes/3/shape" </string>
+				<string> "shapes/3/transform" </string>
+				<string> "shapes/3/trigger" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 19 </int>
+			<int> 16 </int>
 			<string> "variants" </string>
-			<array  len="38" shared="false">
+			<array  len="42" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
 				<vector2> 0, 0 </vector2>
@@ -101,9 +120,9 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 2.050546 </real>
+							<real> 1.227738 </real>
 							<string> "ofs" </string>
-							<vector2> 159.661, -138.133 </vector2>
+							<vector2> -15.483, -138.133 </vector2>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -198,35 +217,54 @@
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 64, 64 </rect2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
 				<vector2_array  len="4"> 					0.916115, 0.521439, 0.916115, 64.2098, 62.6142, 64.2098, 62.6142, 0.521439 </vector2_array>
 				<vector2> 64, 0 </vector2>
 				<resource  resource_type="Texture" path="res://res/triangulo2.*">  </resource>
 				<rect2> 64, 0, 64, 64 </rect2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
 				<resource  resource_type="Shape2D" path="local://2">  </resource>
 				<vector2_array  len="3"> 					2.59474, 3.17555, 2.59474, 62.8834, 62.966, 62.8834 </vector2_array>
-				<vector2> 128.975, -0.663422 </vector2>
-				<rect2> 192, 0, 64, 64 </rect2>
-				<resource  resource_type="Shape2D" path="local://3">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
-				<vector2_array  len="3"> 					2.63484, 64.2102, 63.0061, 64.2102, 63.0061, 2.51213 </vector2_array>
-				<vector2> 194, 0 </vector2>
+				<vector2> 128, 0 </vector2>
 				<resource  resource_type="Texture" path="res://pinchos.*">  </resource>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<resource  resource_type="Shape2D" path="local://4">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
 				<vector2_array  len="4"> 					0.431946, 65.4375, 66.8917, 65.4375, 56.1145, 41.4881, 9.413, 41.4881 </vector2_array>
-				<vector2> 262, 0 </vector2>
+				<vector2> 192, 0 </vector2>
 				<resource  resource_type="Texture" path="res://pinchos_sangre.*">  </resource>
-				<resource  resource_type="Shape2D" path="local://5">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="Shape2D" path="local://4">  </resource>
 				<vector2_array  len="4"> 					1.55554, 64.679, 66.716, 64.679, 56.1274, 42.6874, 7.25708, 41.8728 </vector2_array>
-				<vector2> 329.298, 0.921703 </vector2>
+				<vector2> 256, 0 </vector2>
 				<resource  resource_type="Texture" path="res://meta.*">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<int> 4 </int>
+				<resource  resource_type="Shape2D" path="local://5">  </resource>
 				<resource  resource_type="Shape2D" path="local://6">  </resource>
-				<vector2_array  len="5"> 					34.2117, 1.39572, 63.4722, 22.8534, 54.2063, 58.9414, 15.68, 59.9167, 4.46347, 23.3411 </vector2_array>
+				<resource  resource_type="Shape2D" path="local://7">  </resource>
+				<resource  resource_type="Shape2D" path="local://8">  </resource>
+				<vector2_array  len="10"> 					2.99995, 22.8534, 19.0932, 36.996, 14.7042, 56.503, 33.2358, 46.7495, 51.7675, 59.429, 46.403, 37.9713, 62.0086, 24.8041, 41.0386, 21.8781, 33.2358, 1.88339, 25.433, 19.9274 </vector2_array>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="653"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 12, 6, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 11, 0, 1, 0, 23, 23, -1, 15, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 12, 26, 13, 27, 7, 28, 2, 29, 3, 30, 1, 31, 3, 0, 2, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 33, 9, 34, 14, 0, 0, 0, 11, 35, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 15, 7, 3, 8, 4, 12, 16, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 17, 0, 4, 0, 23, 23, -1, 15, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 18, 26, 13, 27, 7, 28, 2, 29, 3, 30, 1, 31, 3, 0, 5, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 33, 9, 34, 19, 0, 0, 0, 11, 36, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 20, 7, 3, 8, 4, 12, 16, 13, 7, 14, 2, 15, 0, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 21, 0, 7, 0, 23, 23, -1, 15, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 22, 26, 23, 27, 7, 28, 2, 29, 3, 30, 1, 31, 3, 0, 8, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 33, 9, 34, 24, 0, 0, 0, 11, 37, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 25, 7, 3, 8, 4, 12, 26, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 27, 0, 10, 0, 23, 23, -1, 15, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 28, 26, 13, 27, 7, 28, 2, 29, 3, 30, 1, 31, 3, 0, 11, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 33, 9, 34, 29, 0, 0, 0, 11, 38, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 30, 7, 3, 8, 4, 12, 31, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 27, 0, 13, 0, 23, 23, -1, 15, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 32, 26, 13, 27, 7, 28, 2, 29, 3, 30, 1, 31, 3, 0, 14, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 33, 9, 34, 33, 0, 0, 0, 11, 39, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 34, 7, 3, 8, 4, 12, 35, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 27, 0, 16, 0, 23, 23, -1, 15, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 36, 26, 13, 27, 7, 28, 2, 29, 3, 30, 1, 31, 3, 0, 17, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 33, 9, 34, 37, 0 </int_array>
+			<int_array  len="586"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 12, 6, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 11, 9, 12, 0, 1, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 13, 26, 14, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 2, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 15, 0, 0, 0, 11, 36, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 16, 7, 3, 8, 4, 12, 17, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 18, 9, 19, 0, 4, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 20, 26, 14, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 5, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 21, 0, 0, 0, 11, 37, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 22, 7, 3, 8, 4, 12, 23, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 24, 9, 25, 0, 7, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 26, 26, 14, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 8, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 27, 0, 0, 0, 11, 38, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 28, 7, 3, 8, 4, 12, 29, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 24, 9, 30, 0, 10, 0, 23, 23, -1, 16, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 8, 25, 31, 26, 14, 27, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 11, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 32, 0, 0, 0, 11, 39, -1, 19, 2, 0, 3, 1, 4, 1, 5, 0, 6, 33, 7, 3, 8, 4, 12, 34, 13, 7, 14, 2, 15, 7, 16, 7, 17, 8, 18, 8, 19, 9, 20, 10, 21, 7, 22, 24, 9, 35, 0, 13, 0, 23, 23, -1, 25, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 24, 36, 25, 37, 26, 14, 27, 7, 40, 38, 41, 14, 42, 7, 43, 39, 44, 14, 45, 7, 46, 40, 47, 14, 48, 7, 28, 7, 29, 2, 30, 3, 31, 1, 32, 3, 0, 14, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 34, 9, 35, 41, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

@@ -50,7 +50,6 @@ func _integrate_forces(state):
 		#en el editor grafico
 	var colisions = state.get_contact_count()
 	if(colisions > 0):
-		print("hey!")
 		if(not jumping):
 			in_air = false
 			if(lv.y < 0):
@@ -59,12 +58,13 @@ func _integrate_forces(state):
 	else:
 		in_air = true
 	
+	
 	for x in range(state.get_contact_count()):
 		var col_pos = state.get_contact_collider_pos(x)
-		var tile_rel_pos = Vector2(col_pos.x/tile_size, col_pos.y/tile_size)		
+		var tile_rel_pos = col_pos/tile_size
 		var tile_id = get_parent().get_node("TileMap").get_cell(tile_rel_pos.x, tile_rel_pos.y)
 		var tile_name = get_parent().get_node("TileMap").get_tileset().tile_get_name(tile_id)
-		if(tile_name == "pinchos"):
+		if(tile_name == "pinchos" or tile_name == "pinchos_sangre"):
 			get_node("/root/global").goto_scene("res://game_over.xml")
 	
 	var dx = 0
