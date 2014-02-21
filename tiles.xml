@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="TileSet" subresource_count="11" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://meta.png" type="Texture"></ext_resource>
+<resource_file type="TileSet" subresource_count="15" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://pinchos_sangre.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/cuadrado.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/triangulo2.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/suelo.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/pared.png" type="Texture"></ext_resource>
 	<ext_resource path="res://pinchos.png" type="Texture"></ext_resource>
+	<ext_resource path="res://meta.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/cuadrado.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/esquina.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/triangulo2.png" type="Texture"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0.916115, 0.521439, 62.6142, 0.521439, 62.6142, 64.2098, 0.916115, 64.2098 </vector2_array>
@@ -30,41 +33,75 @@
 		<vector2_array name="points" len="7"> 			14.7042, 56.503, 19.0932, 36.996, 25.433, 19.9274, 33.2358, 1.88339, 41.0386, 21.8781, 46.403, 37.9713, 33.2358, 46.7495 </vector2_array>
 
 	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://6">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			-32.0182, 31.2843, -31.2037, -30.6182, 31.5132, -30.6182, 31.5132, 31.2843 </vector2_array>
+
+	</resource>
 	<main_resource>
 		<string name="0/name"> "cuadrado" </string>
 		<resource name="0/texture" resource_type="Texture" path="res://res/cuadrado.png">  </resource>
-		<vector2 name="0/offset"> 0, 0 </vector2>
+		<vector2 name="0/tex_offset"> 0, 0 </vector2>
+		<vector2 name="0/shape_offset"> 0, 0 </vector2>
 		<rect2 name="0/region"> 0, 0, 0, 0 </rect2>
 		<array name="0/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://1">  </resource>
 		</array>
 		<string name="1/name"> "triangulo" </string>
 		<resource name="1/texture" resource_type="Texture" path="res://res/triangulo2.png">  </resource>
-		<vector2 name="1/offset"> 0, 0 </vector2>
+		<vector2 name="1/tex_offset"> 0, 0 </vector2>
+		<vector2 name="1/shape_offset"> 0, 0 </vector2>
 		<rect2 name="1/region"> 0, 0, 0, 0 </rect2>
 		<array name="1/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://2">  </resource>
 		</array>
 		<string name="2/name"> "pinchos" </string>
 		<resource name="2/texture" resource_type="Texture" path="res://pinchos.png">  </resource>
-		<vector2 name="2/offset"> 0, 0 </vector2>
+		<vector2 name="2/tex_offset"> 0, 0 </vector2>
+		<vector2 name="2/shape_offset"> 0, 0 </vector2>
 		<rect2 name="2/region"> 0, 0, 0, 0 </rect2>
 		<array name="2/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://3">  </resource>
 		</array>
 		<string name="3/name"> "pinchos_sangre" </string>
 		<resource name="3/texture" resource_type="Texture" path="res://pinchos_sangre.png">  </resource>
-		<vector2 name="3/offset"> 0, 0 </vector2>
+		<vector2 name="3/tex_offset"> 0, 0 </vector2>
+		<vector2 name="3/shape_offset"> 0, 0 </vector2>
 		<rect2 name="3/region"> 0, 0, 0, 0 </rect2>
 		<array name="3/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://4">  </resource>
 		</array>
 		<string name="4/name"> "meta" </string>
 		<resource name="4/texture" resource_type="Texture" path="res://meta.png">  </resource>
-		<vector2 name="4/offset"> 0, 0 </vector2>
+		<vector2 name="4/tex_offset"> 0, 0 </vector2>
+		<vector2 name="4/shape_offset"> 0, 0 </vector2>
 		<rect2 name="4/region"> 0, 0, 0, 0 </rect2>
 		<array name="4/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://5">  </resource>
+		</array>
+		<string name="5/name"> "suelo" </string>
+		<resource name="5/texture" resource_type="Texture" path="res://res/suelo.png">  </resource>
+		<vector2 name="5/tex_offset"> 0, 0 </vector2>
+		<vector2 name="5/shape_offset"> 0, 0 </vector2>
+		<rect2 name="5/region"> 0, 0, 0, 0 </rect2>
+		<array name="5/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://6">  </resource>
+		</array>
+		<string name="6/name"> "pared" </string>
+		<resource name="6/texture" resource_type="Texture" path="res://res/pared.png">  </resource>
+		<vector2 name="6/tex_offset"> 0, 0 </vector2>
+		<vector2 name="6/shape_offset"> 0, 0 </vector2>
+		<rect2 name="6/region"> 0, 0, 0, 0 </rect2>
+		<array name="6/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://6">  </resource>
+		</array>
+		<string name="7/name"> "esquina" </string>
+		<resource name="7/texture" resource_type="Texture" path="res://res/esquina.png">  </resource>
+		<vector2 name="7/tex_offset"> 0, 0 </vector2>
+		<vector2 name="7/shape_offset"> 0, 0 </vector2>
+		<rect2 name="7/region"> 0, 0, 0, 0 </rect2>
+		<array name="7/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://6">  </resource>
 		</array>
 
 	</main_resource>
