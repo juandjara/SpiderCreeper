@@ -12,8 +12,8 @@ var screen_size
 var sprite_size
 var tile_size
 
-export var walk_speed = 100
-export var jump_speed = -330
+var walk_speed = 100
+var jump_speed = -330
 
 
 func _ready():
