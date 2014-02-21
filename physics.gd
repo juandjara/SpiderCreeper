@@ -65,6 +65,8 @@ func _integrate_forces(state):
 		var tile_rel_pos = col_pos/tile_size
 		var tile_id = get_parent().get_node("TileMap").get_cell(tile_rel_pos.x, tile_rel_pos.y)
 		var tile_name = get_parent().get_node("TileMap").get_tileset().tile_get_name(tile_id)
+		
+		#game over
 		if(tile_name == "pinchos" or tile_name == "pinchos_sangre"):
 			get_node("/root/global").goto_scene("res://game_over.xml")
 	

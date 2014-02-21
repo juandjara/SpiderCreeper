@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="TileSet" subresource_count="15" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://pinchos_sangre.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/suelo.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/pared.png" type="Texture"></ext_resource>
-	<ext_resource path="res://pinchos.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/cuadrado.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/esquina.png" type="Texture"></ext_resource>
 	<ext_resource path="res://res/triangulo2.png" type="Texture"></ext_resource>
+	<ext_resource path="res://pinchos_sangre.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/cuadrado.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/suelo.png" type="Texture"></ext_resource>
+	<ext_resource path="res://pinchos.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/pared.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/esquina.png" type="Texture"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0.916115, 0.521439, 62.6142, 0.521439, 62.6142, 64.2098, 0.916115, 64.2098 </vector2_array>
@@ -29,17 +29,17 @@
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://5">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			31.5132, 31.2843, -31.2463, 30.4542, -31.2037, -30.6182, 31.5132, -30.6182 </vector2_array>
+		<vector2_array name="points" len="4"> 			63.4645, 0.0644264, 63.4645, 63.2215, 1.10181, 63.2215, 0.704605, 0.461643 </vector2_array>
 
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://6">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			-31.3888, 31.4358, -31.2037, -30.6182, 31.5132, -30.6182, 31.5132, 31.2843 </vector2_array>
+		<vector2_array name="points" len="4"> 			63.2374, 63.4893, 0.79538, 62.8422, 0.79538, 0.723755, 63.2374, 0.723759 </vector2_array>
 
 	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://7">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			-31.2389, 31.4805, -31.2037, -30.6182, 31.5132, -30.6182, 31.5132, 31.2843 </vector2_array>
+		<vector2_array name="points" len="4"> 			64.3503, 63.8189, 0.578411, 63.5554, 0.841934, 0.574108, 64.0868, 0.574108 </vector2_array>
 
 	</resource>
 	<main_resource>
