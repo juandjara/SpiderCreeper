@@ -7,17 +7,22 @@ extends RigidBody2D
 
 var direccion= true#izquierda=false, derecha=true
 #encaja mejor como vector?
-var speed =50
+var speed =2
 var direction=1
 var rc_left=null
 var rc_right=null
+var timer = null
+var zero = Vector2(0,0)
 
-func _camina(s):
-	
+func _process(delta):
+	apply_impulse(zero, Vector2(direction*speed, 0))
 
+func _on_timeout():
+	direction = -direction
 
 func _ready():
-	# Initalization here
-	pass
+	set_process(true)
+	timer = get_node("timer")
+	timer.connect("timeout", self, "_on_timeout")
 
 
