@@ -69,7 +69,20 @@ func _integrate_forces(state):
 		#game over
 		if(tile_name == "pinchos" or tile_name == "pinchos_sangre" or tile_name == "pinchos_vertical"):
 			get_node("/root/global").goto_scene("res://game_over.xml")
-	
+		#nextlevel
+		if(tile_name =="meta"):
+			get_node("/root/global").goto_scene("res://level1.xml")
+		if(tile_name =="meta 2"):
+			get_node("/root/global").goto_scene("res://level2.xml")
+		if(tile_name =="meta 3"):
+			get_node("/root/global").goto_scene("res://level3.xml")
+		if(tile_name =="meta 4"):
+			get_node("/root/global").goto_scene("res://level4.xml")
+
+
+
+
+
 	var dx = 0
 	var left = Input.is_action_pressed("left")
 	var right = Input.is_action_pressed("right")
