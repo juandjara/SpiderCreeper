@@ -66,9 +66,18 @@ func _integrate_forces(state):
 		var tile_id = get_parent().get_node("TileMap").get_cell(tile_rel_pos.x, tile_rel_pos.y)
 		var tile_name = get_parent().get_node("TileMap").get_tileset().tile_get_name(tile_id)
 		
+		var collider = state.get_contact_collider_object(x)
+		var obj_name = null
+		if(collider != null):
+			obj_name = collider.get_name()
+		
+		if(obj_name == "Enemy"):
+			get_node("/root/global").goto_scene("res://game_over.xml")
+		
 		#game over
 		if(tile_name == "pinchos" or tile_name == "pinchos_sangre" or tile_name == "pinchos_vertical"):
 			get_node("/root/global").goto_scene("res://game_over.xml")
+		
 		#nextlevel
 		if(tile_name =="meta"):
 			get_node("/root/global").goto_scene("res://level1.xml")
@@ -78,9 +87,6 @@ func _integrate_forces(state):
 			get_node("/root/global").goto_scene("res://level3.xml")
 		if(tile_name =="meta 4"):
 			get_node("/root/global").goto_scene("res://level4.xml")
-
-
-
 
 
 	var dx = 0

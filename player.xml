@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="7" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://physics.*" type="Script"></ext_resource>
 	<ext_resource path="res://res/toon-creeper.*" type="Texture"></ext_resource>
+	<ext_resource path="res://physics.*" type="Script"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="5"> 			9.82127, 26.4644, 9.82127, 17.8607, 12.6892, 13.2004, 17.3495, 13.5589, 17.3495, 26.4644 </vector2_array>
@@ -119,6 +119,15 @@
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="false">
+								<string> "res://physics.gd" </string>
+							</array>
+						</dictionary>
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "pixel_snap" </string>
@@ -213,7 +222,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://res/toon-creeper.*">  </resource>
 				<int> 1 </int>

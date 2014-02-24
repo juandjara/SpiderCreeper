@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://res/fondo_base.*" type="Texture"></ext_resource>
 	<ext_resource path="res://tiles.*" type="TileSet"></ext_resource>
 	<ext_resource path="res://player.*" type="PackedScene"></ext_resource>
 	<ext_resource path="res://enemy.*" type="PackedScene"></ext_resource>
-	<ext_resource path="res://res/fondo_base.*" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -62,12 +62,22 @@
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 1 </int>
+							<string> "sources" </string>
+							<array  len="2" shared="false">
+								<string> "res://enemy.gd" </string>
+								<string> "res://physics.gd" </string>
+							</array>
+						</dictionary>
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 0.440128 </real>
+							<real> 0.193712 </real>
 							<string> "ofs" </string>
 							<vector2> -832, -492.723 </vector2>
 						</dictionary>
@@ -156,7 +166,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<resource  resource_type="PackedScene" path="res://player.*">  </resource>
 				<int> 64 </int>
