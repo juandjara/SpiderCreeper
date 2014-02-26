@@ -44,10 +44,7 @@ func _integrate_forces(state):
 				jumptime += 1
 	
 	#comprobando colisiones (comprobando num. colisiones > 0)
-		#para que esto funcione
-		#el rigidbody2d tiene que tener la propiedad
-		#y "contacts reported" > 0
-		#en el editor grafico
+	#si "contacts reported < 1 esto no"
 	var colisions = state.get_contact_count()
 	print("C: " + str(colisions))
 	if(colisions > 0):
@@ -70,13 +67,12 @@ func _integrate_forces(state):
 		var obj_name = null
 		if(collider != null):
 			obj_name = collider.get_name()
-		
-		if(obj_name == "Enemy"):
-			get_node("/root/global").goto_scene("res://game_over.xml")
+			if(obj_name.begins_with("Enemy")):
+				die()
 		
 		#game over
 		if(tile_name == "pinchos" or tile_name == "pinchos_sangre" or tile_name == "pinchos_vertical"):
-			get_node("/root/global").goto_scene("res://game_over.xml")
+			die()
 		
 		#nextlevel
 		if(tile_name =="meta"):
@@ -108,3 +104,6 @@ func _integrate_forces(state):
 	lv.y+=dy
 	lv += state.get_total_gravity()* step
 	state.set_linear_velocity(lv)
+
+func die():
+	get_node("/root/global").goto_scene("res://game_over.xml")
