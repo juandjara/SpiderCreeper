@@ -74,15 +74,21 @@ func _integrate_forces(state):
 		if(tile_name == "pinchos" or tile_name == "pinchos_sangre" or tile_name == "pinchos_vertical"):
 			die()
 		
+		
+		
 		#nextlevel
 		if(tile_name =="meta"):
-			get_node("/root/global").goto_scene("res://level1.xml")
+			#get_node("/root/global").goto_scene("res://level1.xml")
+			get_node("/root/global").next_level()
 		if(tile_name =="meta 2"):
-			get_node("/root/global").goto_scene("res://level2.xml")
+			#get_node("/root/global").goto_scene("res://level2.xml")
+			get_node("/root/global").next_level()
 		if(tile_name =="meta 3"):
-			get_node("/root/global").goto_scene("res://level3.xml")
+			#get_node("/root/global").goto_scene("res://level3.xml")
+			get_node("/root/global").next_level()
 		if(tile_name =="meta 4"):
-			get_node("/root/global").goto_scene("res://level4.xml")
+			#get_node("/root/global").goto_scene("res://level4.xml")
+			get_node("/root/global").next_level()
 
 
 	var dx = 0
