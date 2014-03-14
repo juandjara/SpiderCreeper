@@ -43,8 +43,9 @@ func _integrate_forces(state):
 			elif(jumping):
 				jumptime += 1
 	
+	#gestion salto parte n-esima
 	#comprobando colisiones (comprobando num. colisiones > 0)
-	#si "contacts reported < 1 esto no"
+	#si "contacts reported < 1 esto no va"
 	var colisions = state.get_contact_count()
 	print("C: " + str(colisions))
 	if(colisions > 0):
@@ -56,40 +57,19 @@ func _integrate_forces(state):
 	else:
 		in_air = true
 	
-	
-	for x in range(state.get_contact_count()):
-		var col_pos = state.get_contact_collider_pos(x)
-		var tile_rel_pos = col_pos/tile_size
-		var tile_id = get_parent().get_node("TileMap").get_cell(tile_rel_pos.x, tile_rel_pos.y)
-		var tile_name = get_parent().get_node("TileMap").get_tileset().tile_get_name(tile_id)
-		
-		var collider = state.get_contact_collider_object(x)
-		var obj_name = null
-		if(collider != null):
-			obj_name = collider.get_name()
-			if(obj_name.begins_with("Enemy")):
-				die()
-		
-		#game over
-		if(tile_name == "pinchos" or tile_name == "pinchos_sangre" or tile_name == "pinchos_vertical"):
+	for col_index in range(state.get_contact_count()):
+		var tile_name = get_coliding_tile_name(col_index, state)
+		var obj_name = get_coliding_obj_name(col_index, state)
+		if(obj_name.begins_with("Enemy")):
 			die()
 		
-		
+		#game over
+		if(tile_name.begins_with("pinchos")):
+			die()
 		
 		#nextlevel
-		if(tile_name =="meta"):
-			#get_node("/root/global").goto_scene("res://level1.xml")
+		if(tile_name.begins_with("meta")):
 			get_node("/root/global").next_level()
-		if(tile_name =="meta 2"):
-			#get_node("/root/global").goto_scene("res://level2.xml")
-			get_node("/root/global").next_level()
-		if(tile_name =="meta 3"):
-			#get_node("/root/global").goto_scene("res://level3.xml")
-			get_node("/root/global").next_level()
-		if(tile_name =="meta 4"):
-			#get_node("/root/global").goto_scene("res://level4.xml")
-			get_node("/root/global").next_level()
-
 
 	var dx = 0
 	var left = Input.is_action_pressed("left")
@@ -112,4 +92,18 @@ func _integrate_forces(state):
 	state.set_linear_velocity(lv)
 
 func die():
-	get_node("/root/global").goto_scene("res://game_over.xml")
+	get_node("/root/global").game_over()
+
+#funcion con valores por defecto
+func get_coliding_tile_name(col_index=0, state=null):
+	var col_pos = state.get_contact_collider_pos(col_index)
+	var tile_rel_pos = col_pos/tile_size
+	var tile_id = get_parent().get_node("TileMap").get_cell(tile_rel_pos.x, tile_rel_pos.y)
+	return get_parent().get_node("TileMap").get_tileset().tile_get_name(tile_id)
+
+func get_coliding_obj_name(col_index=0, state=null):
+	var collider = state.get_contact_collider_object(col_index)
+	if(collider != null):
+		return collider.get_name()
+	else:
+		return "none"

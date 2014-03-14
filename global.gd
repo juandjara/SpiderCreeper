@@ -13,6 +13,10 @@ func goto_scene(scene):
 	current_scene = s.instance()
 	get_scene().get_root().add_child(current_scene) 
 
+func game_over():
+	current_level=0
+	goto_scene("res://game_over.xml")
+
 func next_level():
 	current_level = current_level + 1
 	goto_scene("res://level"+str(current_level)+".xml")
