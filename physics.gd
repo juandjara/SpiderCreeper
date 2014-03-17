@@ -27,21 +27,7 @@ func _integrate_forces(state):
 	var lv = state.get_linear_velocity() #velocidad
 	var step = state.get_step() #delta
 	
-	var jump_press = Input.is_action_pressed("jump")
-	#gestionando salto
-	if(jump_press or in_air):
-		if(not in_air):
-			jumping=true
-			dy = jump_speed* step
-			in_air=true
-			jumptime = 0
-		else:
-			if(jumping and jumptime > max_jumptime):
-				jumping=false
-				dy = 0
-				jumptime = 0
-			elif(jumping):
-				jumptime += 1
+	handle_jump(step)
 	
 	#gestion salto parte n-esima
 	#comprobando colisiones (comprobando num. colisiones > 0)
@@ -107,3 +93,20 @@ func get_coliding_obj_name(col_index=0, state=null):
 		return collider.get_name()
 	else:
 		return "none"
+
+func handle_jump(step):
+	var jump_press = Input.is_action_pressed("jump")
+	#gestionando salto
+	if(jump_press or in_air):
+		if(not in_air):
+			jumping=true
+			dy = jump_speed* step
+			in_air=true
+			jumptime = 0
+		else:
+			if(jumping and jumptime > max_jumptime):
+				jumping=false
+				dy = 0
+				jumptime = 0
+			elif(jumping):
+				jumptime += 1
