@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="7" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+<resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://res/toon-creeper.*" type="Texture"></ext_resource>
 	<ext_resource path="res://physics.*" type="Script"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="5"> 			9.82127, 26.4644, 9.82127, 17.8607, 12.6892, 13.2004, 17.3495, 13.5589, 17.3495, 26.4644 </vector2_array>
-
-	</resource>
-	<resource type="ConvexPolygonShape2D" path="local://2">
-		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="5"> 			-5.95211, 27.1813, -13.1218, 27.1813, -13.1218, 11.0495, -8.10302, 11.0495, -5.95211, 17.8607 </vector2_array>
-
-	</resource>
-	<resource type="ConvexPolygonShape2D" path="local://3">
-		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="5"> 			18.7834, -26.5915, 19.8589, -5.79937, -8.10302, -6.15785, -14.1973, -6.87482, -14.5558, -26.2331 </vector2_array>
-
-	</resource>
-	<resource type="ConvexPolygonShape2D" path="local://4">
-		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="6"> 			-5.95211, 17.8607, -8.10302, 11.0495, -8.10302, -6.15785, 12.6892, -5.79937, 12.6892, 13.2004, 9.82127, 17.8607 </vector2_array>
+		<vector2_array name="points" len="4"> 			-14.9143, -27.3085, 18.4249, -27.3085, 15.557, 27.8983, -12.0464, 27.8983 </vector2_array>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="65">
+			<string_array  len="56">
 				<string> "RigidBody2D" </string>
 				<string> "visibility/visible" </string>
 				<string> "visibility/opacity" </string>
@@ -38,15 +23,6 @@
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
-				<string> "shapes/1/shape" </string>
-				<string> "shapes/1/transform" </string>
-				<string> "shapes/1/trigger" </string>
-				<string> "shapes/2/shape" </string>
-				<string> "shapes/2/transform" </string>
-				<string> "shapes/2/trigger" </string>
-				<string> "shapes/3/shape" </string>
-				<string> "shapes/3/transform" </string>
-				<string> "shapes/3/trigger" </string>
 				<string> "mode" </string>
 				<string> "mass" </string>
 				<string> "friction" </string>
@@ -102,21 +78,21 @@
 			<array  len="25" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
-				<vector2> 0, 0 </vector2>
+				<vector2> -0.358482, 0.35849 </vector2>
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
-				<int> 4 </int>
+				<int> 1 </int>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
 				<bool> False </bool>
-				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<resource  resource_type="Shape2D" path="local://3">  </resource>
-				<resource  resource_type="Shape2D" path="local://4">  </resource>
 				<int> 2 </int>
 				<int> 0 </int>
 				<int> 15 </int>
+				<vector2> 0, 0 </vector2>
 				<resource  resource_type="Script" path="res://physics.*">  </resource>
 				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "Script" </string>
@@ -222,19 +198,27 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://res/toon-creeper.*">  </resource>
-				<int> 1 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -0.35849, 0.358482 </vector2>
 				<int> -10000000 </int>
 				<int> 10000000 </int>
 				<real> 0.2 </real>
-				<vector2_array  len="16"> 					-14.5558, -26.2331, 18.7834, -26.5915, 19.8589, -5.79937, 12.6892, -5.79937, 12.6892, 13.2004, 17.3495, 13.5589, 17.3495, 26.4644, 9.82127, 26.4644, 9.82127, 17.8607, -5.95211, 17.8607, -5.95211, 27.1813, -13.1218, 27.1813, -13.1218, 11.0495, -8.10302, 11.0495, -8.10302, -6.15785, -14.1973, -6.87482 </vector2_array>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2_array  len="4"> 					18.4249, -27.3085, 15.557, 27.8983, -12.0464, 27.8983, -14.9143, -27.3085 </vector2_array>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="194"> 				-1, -1, 0, 0, -1, 34, 1, 0, 2, 1, 3, 1, 4, 0, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 9, 13, 7, 14, 8, 15, 10, 16, 7, 17, 8, 18, 11, 19, 7, 20, 8, 21, 12, 22, 1, 23, 1, 24, 3, 25, 8, 26, 13, 27, 14, 28, 8, 29, 0, 30, 0, 31, 2, 32, 3, 33, 15, 34, 16, 0, 0, 0, 35, 35, -1, 18, 1, 0, 2, 1, 3, 1, 4, 0, 5, 2, 6, 3, 7, 4, 36, 17, 37, 0, 38, 2, 39, 8, 40, 8, 41, 18, 42, 18, 43, 13, 44, 19, 45, 8, 46, 20, 0, 0, 0, 47, 47, -1, 22, 1, 0, 2, 1, 3, 1, 4, 0, 5, 2, 6, 3, 7, 4, 37, 0, 48, 8, 49, 0, 50, 3, 51, 4, 52, 21, 53, 21, 54, 22, 55, 22, 56, 0, 57, 0, 58, 23, 59, 23, 60, 23, 61, 23, 0, 0, 0, 62, 62, -1, 9, 1, 0, 2, 1, 3, 1, 4, 0, 5, 2, 6, 3, 7, 4, 63, 13, 64, 24, 0 </int_array>
+			<int_array  len="180"> 				-1, -1, 0, 0, -1, 25, 1, 0, 2, 1, 3, 1, 4, 0, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 9, 13, 1, 14, 3, 15, 3, 16, 8, 17, 10, 18, 11, 19, 8, 20, 0, 21, 0, 22, 12, 23, 3, 24, 13, 25, 14, 0, 0, 0, 26, 26, -1, 19, 1, 0, 2, 1, 3, 1, 4, 0, 5, 12, 6, 3, 7, 4, 27, 15, 28, 0, 29, 12, 30, 8, 31, 8, 32, 5, 33, 5, 34, 10, 35, 16, 36, 8, 37, 17, 25, 18, 0, 0, 0, 38, 38, -1, 23, 1, 0, 2, 1, 3, 1, 4, 0, 5, 19, 6, 3, 7, 4, 28, 0, 39, 8, 40, 0, 41, 3, 42, 4, 43, 20, 44, 20, 45, 21, 46, 21, 47, 0, 48, 0, 49, 22, 50, 22, 51, 22, 52, 22, 25, 23, 0, 0, 0, 53, 53, -1, 9, 1, 0, 2, 1, 3, 1, 4, 0, 5, 12, 6, 3, 7, 4, 54, 10, 55, 24, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

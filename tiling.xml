@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="18" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://pinchos_giro.*" type="Texture"></ext_resource>
+	<ext_resource path="res://pinchos.*" type="Texture"></ext_resource>
+	<ext_resource path="res://res/triangulo2.*" type="Texture"></ext_resource>
+	<ext_resource path="res://pinchos_sangre.*" type="Texture"></ext_resource>
+	<ext_resource path="res://res/circulo.*" type="Texture"></ext_resource>
 	<ext_resource path="res://res/suelo.*" type="Texture"></ext_resource>
 	<ext_resource path="res://res/pared.*" type="Texture"></ext_resource>
-	<ext_resource path="res://pinchos_giro.*" type="Texture"></ext_resource>
-	<ext_resource path="res://res/circulo.*" type="Texture"></ext_resource>
-	<ext_resource path="res://pinchos.*" type="Texture"></ext_resource>
-	<ext_resource path="res://pinchos_sangre.*" type="Texture"></ext_resource>
 	<ext_resource path="res://res/esquina.*" type="Texture"></ext_resource>
-	<ext_resource path="res://res/triangulo2.*" type="Texture"></ext_resource>
 	<ext_resource path="res://res/cuadrado.*" type="Texture"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
@@ -119,14 +119,23 @@
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="false">
+								<string> "res://global.gd" </string>
+							</array>
+						</dictionary>
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 1.227738 </real>
+							<real> 0.54036 </real>
 							<string> "ofs" </string>
-							<vector2> -78.1265, -25.7779 </vector2>
+							<vector2> -78.1265, -30.9478 </vector2>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -213,7 +222,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://res/cuadrado.*">  </resource>
 				<bool> False </bool>
